@@ -28,11 +28,24 @@ int main(){
     int e;
     cin>>e;
 
-    while(e--){
-        int s,d;
-        cin>>s>>d;
+    int choice;
+    cin>>choice;
 
-        addEdge(s,d);
+    if(choice == 1){
+        while(e--){
+            int s,d;
+            cin>>s>>d;
+
+            addEdge(s,d);
+        }
+    }
+    else if(choice == 2){
+        while(e--){
+            int s,d;
+            cin>>s>>d;
+
+            addEdge(s,d,false);
+        }
     }
 
     display();
